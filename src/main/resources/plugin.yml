@@ -1,0 +1,6 @@
+name: FootcubeManager
+version: '0.0.1-BETA'
+main: me.maatija.pfm.kornercraft.FootcubeM
+author: Maatijaa
+api-version: '1.8'
+description: FootcubeManager is a plugin that helps you manage your football server, easly.
