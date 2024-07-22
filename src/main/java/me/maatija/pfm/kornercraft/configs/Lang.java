@@ -5,7 +5,7 @@ import org.bukkit.ChatColor;
 
 @Getter
 public enum Lang {
-    CLEARCUBE_ANNOUNCE("clearcube_announce", "&a▎ &fLopte uspesno obrisane sa treninga i okoline."),
+    CLEARCUBE_ANNOUNCE("clearcube_announce", "&a▎ &fLopte uspesno obrisane sa treninga."),
     CANNOT_EXECUTE("cannot_execute", "&4▎ &cNije moguće izvršiti ovu komandu u konzoli."),
     RELOAD_SUCCESS("reload_success", "&a▎ &fPlugin je osvežen!"),
     HELP("help", String.join(System.lineSeparator(),
