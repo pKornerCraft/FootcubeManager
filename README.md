@@ -4,15 +4,15 @@ FootcubeManager is a FC managment plugin with diffrent aspects, and modules.
 
 # License
 
-![](https://img.shields.io/github/license/pKornerCraft/FootcubeManager.svg)
+[](https://img.shields.io/github/license/pKornerCraft/FootcubeManager.svg)
 
 # Updates
 
-![](https://img.shields.io/github/commit-activity/m/pKornerCraft/FootcubeManager)
+[](https://img.shields.io/github/commit-activity/m/pKornerCraft/FootcubeManager)
 
 # Project
 
-![](https://img.shields.io/github/directory-file-count/pKornerCraft/FootcubeManager)
+[](https://img.shields.io/github/directory-file-count/pKornerCraft/FootcubeManager)
 
 # Info
 
