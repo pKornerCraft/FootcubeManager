@@ -10,12 +10,12 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandAlias("pm")
-public class PMCommand extends BaseCommand {
+@CommandAlias("fm")
+public class FMCommand extends BaseCommand {
 
     private final FootcubeM plugin;
 
-    public PMCommand(FootcubeM plugin) {
+    public FMCommand(FootcubeM plugin) {
         this.plugin = plugin;
     }
 

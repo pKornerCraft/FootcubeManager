@@ -3,9 +3,8 @@ package me.maatija.pfm.kornercraft;
 import co.aikar.commands.CommandManager;
 import co.aikar.commands.PaperCommandManager;
 import me.maatija.pfm.kornercraft.events.ClearCubeEvent;
-import me.maatija.pfm.kornercraft.commands.PMCommand;
-import me.maatija.pfm.kornercraft.managers.ConfigManager;
-import me.maatija.pfm.kornercraft.managers.UtilManager;
+import me.maatija.pfm.kornercraft.commands.FMCommand;
+import me.maatija.pfm.kornercraft.managers.*;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -21,26 +20,23 @@ public final class FootcubeM extends JavaPlugin {
 
         utilManager = new UtilManager(this);
         utilManager.getLogger().sendBanner();
-        utilManager.getLogger().info("Loading Commands...");
 
-        commandManager = new PaperCommandManager(this);
-        commandManager.registerCommand(new PMCommand(this));
+        utilManager.getLogger().info("Loading Commands...");
+        setupCommands();
         utilManager.getLogger().info("Commands successfully loaded!");
 
         utilManager.getLogger().info("Loading Events...");
-        ClearCubeEvent clearCubeEvent = new ClearCubeEvent(this, 15);
-        clearCubeEvent.start();
+        setupEvents();
         utilManager.getLogger().info("Events successfully loaded!");
 
-        configManager = new ConfigManager(this, "messages.yml");
-        configManager.reloadConfig("messages.yml");
+        utilManager.getLogger().info("Loading Messages..");
+        setupMessages();
 
+        utilManager.getLogger().info("Messages successfully loaded!");
         utilManager.getLogger().info("FootcubeManager started successfully!");
         Bukkit.getConsoleSender().sendMessage("FootcubeManager has been enabled!");
     }
 
-    // Koja je marka calvin klain?
-    // womp womp
     @Override
     public void onDisable() {
 
@@ -66,4 +62,18 @@ public final class FootcubeM extends JavaPlugin {
     public void setUtilManager(UtilManager utilManager) {
         this.utilManager = utilManager;
     }
+
+    public void setupCommands() {
+        commandManager = new PaperCommandManager(this);
+        commandManager.registerCommand(new FMCommand(this));
+    }
+    public void setupEvents() {
+        ClearCubeEvent clearCubeEvent = new ClearCubeEvent(this, 15);
+        clearCubeEvent.start();
+    }
+    public void setupMessages() {
+        configManager = new ConfigManager(this, "messages.yml");
+        configManager.reloadConfig("messages.yml");
+    }
+
 }

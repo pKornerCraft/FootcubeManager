@@ -12,9 +12,9 @@ public enum Lang {
             "&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r",
             "&f &bFootcube&3Manager &7- &fLista dostupnih komandi.",
             "&r &r",
-            "&c /&4pm help &7- &fOtvara ovu stranicu.",
-            "&c /&4pm info &7- &fOtvara informacije plugina.",
-            "&c /&4pm reload &7- &fOsvežava Plugin.",
+            "&c /&4fm help &7- &fOtvara ovu stranicu.",
+            "&c /&4fm info &7- &fOtvara informacije plugina.",
+            "&c /&4fm reload &7- &fOsvežava Plugin.",
             "&r &r",
             "&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
     ));
