@@ -1,5 +1,5 @@
 name: FootcubeManager
-version: '${project.version}'
+version: '0.0.1-beta'
 main: me.maatija.pfm.kornercraft.FootcubeM
 author: Maatijaa
 api-version: '1.8'

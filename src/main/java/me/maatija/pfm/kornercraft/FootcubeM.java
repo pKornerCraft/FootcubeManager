@@ -21,19 +21,12 @@ public final class FootcubeM extends JavaPlugin {
         utilManager = new UtilManager(this);
         utilManager.getLogger().sendBanner();
 
-        utilManager.getLogger().info("Loading Commands...");
         setupCommands();
-        utilManager.getLogger().info("Commands successfully loaded!");
-
-        utilManager.getLogger().info("Loading Events...");
         setupEvents();
-        utilManager.getLogger().info("Events successfully loaded!");
+        setupEvents();
 
-        utilManager.getLogger().info("Loading Messages..");
-        setupMessages();
+        utilManager.getLogger().info("FootcubeManager has loaded succsesfully!");
 
-        utilManager.getLogger().info("Messages successfully loaded!");
-        utilManager.getLogger().info("FootcubeManager started successfully!");
         Bukkit.getConsoleSender().sendMessage("FootcubeManager has been enabled!");
     }
 
