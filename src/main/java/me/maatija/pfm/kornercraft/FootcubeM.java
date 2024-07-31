@@ -5,7 +5,6 @@ import co.aikar.commands.PaperCommandManager;
 import me.maatija.pfm.kornercraft.events.ClearCubeEvent;
 import me.maatija.pfm.kornercraft.commands.FMCommand;
 import me.maatija.pfm.kornercraft.managers.*;
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,16 +17,13 @@ public final class FootcubeM extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        utilManager = new UtilManager(this);
         utilManager.getLogger().sendBanner();
 
         setupCommands();
         setupEvents();
-        setupEvents();
+        setupMessages();
 
-        utilManager.getLogger().info("FootcubeManager has loaded succsesfully!");
-
-        Bukkit.getConsoleSender().sendMessage("FootcubeManager has been enabled!");
+        utilManager.getLogger().info("FootcubeManager succsesfully Loaded!");
     }
 
     @Override
@@ -61,7 +57,7 @@ public final class FootcubeM extends JavaPlugin {
         commandManager.registerCommand(new FMCommand(this));
     }
     public void setupEvents() {
-        ClearCubeEvent clearCubeEvent = new ClearCubeEvent(this, 15);
+        ClearCubeEvent clearCubeEvent = new ClearCubeEvent(this.getUtilManager(), 15);
         clearCubeEvent.start();
     }
     public void setupMessages() {

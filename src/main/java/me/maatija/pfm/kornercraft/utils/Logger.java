@@ -1,9 +1,10 @@
 package me.maatija.pfm.kornercraft.utils;
 
 import org.bukkit.ChatColor;
+import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.command.ConsoleCommandSender;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,5 +68,9 @@ public class Logger {
     }
 
     public void reload() {
+    }
+
+    public void send(Player player, String message) {
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 }
